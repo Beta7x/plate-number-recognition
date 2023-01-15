@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login and Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylelogin.css') }}">       
+  </head>
+  <body class="bg-light">
+    <div class="container shadow-sm col-lg-8 position-center rounded-5 bg-white">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 p-4 w-55 text-center">
+          <h1 class="my-2">Daftar Akun</h1>
+            <div class="my-3">
+              <img src="D:\Project Flask\website_parkir_fiks\static\1.jpg" class="img-fluid w-50" alt="">
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control shadow-none rounded-pill p-3" placeholder="Email"/>
+            </div>
+
+            <div class="mb-3">
+              <input type="password" class="form-control shadow-none rounded-pill p-3" placeholder="Password"/>
+            </div>
+
+            <div class="mb-3">
+                <input type="password" class="form-control shadow-none rounded-pill p-3" placeholder="Konfirmasi Password"/>
+            </div>
+
+            <div class="mb-3">
+              <button class="btn btn-dark btn-custom shadow-none p-3 w-100 rounded-pill"><a href="/login">Daftar</a></button>
+            </div>
+
+            <div class="my-2">
+              <p>Sudah punya akun? Login <a href="/login">disini</a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+            crossorigin="anonymous">
+    </script>
+  </body>
+</html>
